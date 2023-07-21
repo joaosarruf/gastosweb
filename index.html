@@ -51,10 +51,11 @@
         <div class="categorias">
             <h2>Categorias</h2>
             <button onclick="mostrarFormularioCategoria()">Adicionar Categoria</button>
+            <button onclick="mostrarEditarCategorias()">Editar Categorias</button>
             <p>Saldo: R$ <span id="saldo">100.00</span></p>
-            <p>Luz: R$ <span id="luz">0.00</span> <button onclick="editarCategoria('luz')">Editar</button></p>
-            <p>Internet: R$ <span id="internet">0.00</span> <button onclick="editarCategoria('internet')">Editar</button></p>
-            <!-- Adicione outros botões de edição para as demais categorias existentes -->
+            <p>Luz: R$ <span id="luz">0.00</span></p>
+            <p>Internet: R$ <span id="internet">0.00</span></p>
+            <!-- Adicione outros elementos para as demais categorias existentes -->
         </div>
 
         <!-- Formulário para criar novas categorias -->
@@ -62,6 +63,14 @@
             <h2>Nova Categoria</h2>
             <input type="text" id="nova_categoria_input" placeholder="Nome da nova categoria">
             <button onclick="criarCategoria()">Criar</button>
+        </div>
+
+        <!-- Formulário para editar categorias -->
+        <div class="categorias-editar" style="display: none;">
+            <h2>Editar Categorias</h2>
+            <ul id="lista_categorias_editar"></ul>
+            <button onclick="salvarEdicoesCategorias()">Salvar Alterações</button>
+            <button onclick="mostrarPaginaPrincipal()">Cancelar</button>
         </div>
     </div>
 
