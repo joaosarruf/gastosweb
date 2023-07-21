@@ -23,3 +23,12 @@ h1 {
     border: none;
     cursor: pointer;
 }
+
+/* Estilos adicionais para esconder os formulários de registro e exibir a página principal somente após o login */
+.register-form {
+    display: none;
+}
+
+.pagina-principal {
+    display: none;
+}
