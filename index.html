@@ -50,15 +50,18 @@
         </div>
         <div class="categorias">
             <h2>Categorias</h2>
+            <button onclick="mostrarFormularioCategoria()">Adicionar Categoria</button>
             <p>Saldo: R$ <span id="saldo">100.00</span></p>
-            <p>Luz: R$ <span id="luz">0.00</span></p>
-            <p>Internet: R$ <span id="internet">0.00</span></p>
-            <p>Investimento: R$ <span id="investimento">0.00</span></p>
-            <p>Extras: R$ <span id="extras">0.00</span></p>
-            <p>Uber: R$ <span id="uber">0.00</span></p>
-            <p>Ônibus: R$ <span id="onibus">0.00</span></p>
-            <p>Mercado por Quinzena: R$ <span id="mercado_quinzena">0.00</span></p>
-            <p>Lavanderia: R$ <span id="lavanderia">0.00</span></p>
+            <p>Luz: R$ <span id="luz">0.00</span> <button onclick="editarCategoria('luz')">Editar</button></p>
+            <p>Internet: R$ <span id="internet">0.00</span> <button onclick="editarCategoria('internet')">Editar</button></p>
+            <!-- Adicione outros botões de edição para as demais categorias existentes -->
+        </div>
+
+        <!-- Formulário para criar novas categorias -->
+        <div class="categorias-editar" style="display: none;">
+            <h2>Nova Categoria</h2>
+            <input type="text" id="nova_categoria_input" placeholder="Nome da nova categoria">
+            <button onclick="criarCategoria()">Criar</button>
         </div>
     </div>
 
