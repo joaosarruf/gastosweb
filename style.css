@@ -17,4 +17,15 @@
     cursor: pointer;
 }
 
+/* Estilos para o formulário de edição de categorias */
+.categorias-editar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.categorias-editar li {
+    margin-bottom: 10px;
+}
+
 /* ... (estilos posteriores) ... */
