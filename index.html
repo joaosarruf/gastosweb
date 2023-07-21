@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Meus Gastos</h1>
+    <div class="saldo">
+        <p>Saldo Total: R$ <span id="saldo_total">100.00</span></p>
+    </div>
+    <div class="gastos">
+        <input type="number" id="valor_input" placeholder="Digite o valor em reais">
+        <select id="tipo_select">
+            <option value="entrada">Entrada</option>
+            <option value="retirada">Retirada</option>
+        </select>
+        <select id="categoria_select">
+            <option value="saldo">Saldo</option>
+            <option value="luz">Luz</option>
+            <option value="internet">Internet</option>
+            <option value="investimento">Investimento</option>
+            <option value="extras">Extras</option>
+            <option value="uber">Uber</option>
+            <option value="onibus">Ônibus</option>
+            <option value="mercado_quinzena">Mercado por Quinzena</option>
+            <option value="lavanderia">Lavanderia</option>
+        </select>
+        <button onclick="registrarGasto()">Registrar</button>
+    </div>
+    <div class="categorias">
+        <h2>Categorias</h2>
+        <p>Saldo: R$ <span id="saldo">100.00</span></p>
+        <p>Luz: R$ <span id="luz">0.00</span></p>
+        <p>Internet: R$ <span id="internet">0.00</span></p>
+        <p>Investimento: R$ <span id="investimento">0.00</span></p>
+        <p>Extras: R$ <span id="extras">0.00</span></p>
+        <p>Uber: R$ <span id="uber">0.00</span></p>
+        <p>Ônibus: R$ <span id="onibus">0.00</span></p>
+        <p>Mercado por Quinzena: R$ <span id="mercado_quinzena">0.00</span></p>
+        <p>Lavanderia: R$ <span id="lavanderia">0.00</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
