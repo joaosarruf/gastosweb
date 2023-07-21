@@ -1,22 +1,15 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+/* ... (estilos anteriores) ... */
+
+.categorias-editar {
+    margin-top: 20px;
 }
 
-h1 {
-    color: #007BFF;
-}
-
-.saldo, .categorias {
-    margin-bottom: 20px;
-}
-
-.gastos input {
+.categorias-editar input {
     padding: 5px;
     margin-right: 10px;
 }
 
-.gastos button {
+.categorias-editar button {
     padding: 5px 10px;
     background-color: #007BFF;
     color: white;
@@ -24,11 +17,4 @@ h1 {
     cursor: pointer;
 }
 
-/* Estilos adicionais para esconder os formulários de registro e exibir a página principal somente após o login */
-.register-form {
-    display: none;
-}
-
-.pagina-principal {
-    display: none;
-}
+/* ... (estilos posteriores) ... */
